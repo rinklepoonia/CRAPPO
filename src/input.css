@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cross span:nth-child(1) {
+    transform: rotate(58deg) translateY(17px);
+    transition: 300ms;
+    position: relative;
+    top: -5px;
+}
+
+.cross span:nth-child(2) {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 300ms;
+}
+
+.cross span:nth-child(3) {
+    transform: rotate(123deg) translateY(19px);
+    transition: 300ms;
+    position: relative;
+    top: -10px;
+}
+
+@layer components {
+    .row {
+        @apply flex flex-wrap flex-row mx-[-12px]
+    }
+}
+
+@layer components {
+    .text-property {
+        @apply text-white text-[16px] font-normal leading-[28px] tracking-[0.16px] font-[Rubik]
+    }
+}
+
+@layer components {
+    .btn {
+        @apply text-white text-[18px] font-medium leading-[150%] font-[Rubik] bg-[#3671E9] rounded-[32px]
+    }
+}
+
+/* 
+@layer components {
+    .hover-effect {
+        @apply border-transparent hover: bg-white hover:text-[#3671E9] border hover:border-[#3671E9] transition-all ease-linear duration-300 shadow hover:shadow-purple-300
+    }
+} */
