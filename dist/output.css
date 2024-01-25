@@ -939,6 +939,10 @@ video {
   gap: 8px;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .text-nowrap{
   text-wrap: nowrap;
 }
@@ -1002,6 +1006,15 @@ video {
 
 .border-transparent{
   border-color: transparent;
+}
+
+.border-\[\#E\]{
+  border-color: #E;
+}
+
+.border-\[\#EDEDED\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(237 237 237 / var(--tw-border-opacity));
 }
 
 .bg-\[\#0D0D2B\]{
@@ -1999,6 +2012,12 @@ video {
 
 @media (min-width: 1280px){
   .xl\:block{
+    display: block;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:block{
     display: block;
   }
 }
