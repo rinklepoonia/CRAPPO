@@ -1,0 +1,8 @@
+* {
+    scroll-behavior: smooth !important;
+}
+
+.show {
+    opacity: 1 !important;
+    visibility: visible;
+}
