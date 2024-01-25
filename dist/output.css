@@ -674,6 +674,14 @@ video {
   bottom: 0;
 }
 
+.bottom-\[21\%\]{
+  bottom: 21%;
+}
+
+.left-\[55\%\]{
+  left: 55%;
+}
+
 .z-\[1\]{
   z-index: 1;
 }
