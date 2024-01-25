@@ -34,13 +34,15 @@
 </head>
 
 <body>
-    <header class="bg-[#0D0D2B] pt-[50px]">
+    <header class="bg-[#0D0D2B] pt-[50px] pb-[10px]">
         <div class="max-w-[1320px] mx-auto px-[12px]">
             <nav>
                 <div class="flex justify-between items-center">
                     <div class="flex gap-[16px] items-center">
-                        <img src="./dist/images/logo.png" alt="logo">
-                        <h1 class="text-white text-[18px] font-semibold leading-normal tracking-[0.72px]">Countries
+                        <img class="cursor-pointer" src="./dist/images/logo.png" alt="logo">
+                        <h1
+                            class="text-white text-[18px] font-semibold leading-normal tracking-[0.72px] cursor-pointer">
+                            Countries
                             Supported</h1>
                     </div>
 
@@ -71,16 +73,16 @@
                         </div>
                         <ul class="flex gap-[24px] items-center max-lg:hidden">
                             <li><a href=""
-                                    class="text-white text-[16px] font-medium leading-[150%] font-Rubik">Login</a>
+                                    class="text-white text-[16px] font-medium leading-[150%] font-Rubik relative after:absolute after:w-0 after:h-[1px] after:bg-white after:left-0 after:bottom-0 after:hover:w-full transition-all  ease-linear duration-300">Login</a>
                             </li>
                             <li class="border-r-[1px] h-[24px] text-[#525267]"></li>
                             <li><button
-                                    class="text-white text-[16px] font-medium leading-[150%] font-Rubik bg-[#3671E9] py-[14px] px-[32px] rounded-[32px]">Register</button>
+                                    class="text-white text-[16px] font-medium leading-[150%] font-Rubik bg-[#3671E9] py-[14px] px-[32px] rounded-[32px] shadow hover:opacity-[0.5] hover:shadow-blue-50 transition-all ease-linear duration-300">Register</button>
                             </li>
                         </ul>
                     </div>
                     <div onclick="openNav()"
-                        class="menuIcon max-lg:w-[30px] max-lg:h-[30px] max-lg:flex max-lg:justify-between max-lg:z-[15] max-lg:flex-col max-lg:cursor-pointer start-0">
+                        class="menuIcon max-lg:w-[30px] max-lg:h-[30px] max-lg:flex max-lg:justify-between max-lg:z-[15] max-lg:flex-col max-lg:cursor-pointer start-0 transition-all ease-linear duration-300 hidden">
                         <span class="max-lg:w-full max-lg:h-[4px] max-lg:bg-[white]"></span>
                         <span class="max-lg:w-full max-lg:h-[4px] max-lg:bg-[white]"></span>
                         <span class="max-lg:w-full max-lg:h-[4px] max-lg:bg-[white]"></span>
@@ -91,7 +93,7 @@
     </header>
 
     <!-- ============Fastest-&-secure-section-1============= -->
-    <section class="bg-[#0D0D2B] pt-[100px] mt-[-2px] relative">
+    <section class="bg-[#0D0D2B] pt-[80px] mt-[-2px] relative">
         <div class="max-w-[1320px] mx-auto px-[12px]">
             <div class="row lg:flex-row flex-col-reverse">
                 <div class="lg:w-[50%] w-full px-[12px]">
@@ -132,7 +134,7 @@
                 <div class="absolute bottom-0 right-[26%] lg:block hidden">
                     <img src="./dist/images/hero-section-1st-shadow.png" alt="hero-section-1st-shadow">
                 </div>
-                <div class="absolute bottom-[12%] left-[67%] right-[-16px] lg:block hidden">
+                <div class="absolute bottom-[12%] left-[67%] right-[-16px] xl:block hidden">
                     <img src="./dist/images/hero-2nd-shadaw.png" alt="hero-2nd-shadaw">
                 </div>
             </div>
@@ -223,24 +225,15 @@
                     </div>
                     <div class="lg:w-[33.33%] w-[50%] px-[12px]">
                         <div class="flex gap-[130px] items-center border-b-[1px] max-sm:mt-[30px]">
-                            <!-- <label>TH/s</label>
-                            <select
-                                class="text-[#0D0D2B] text-[20px] font-normal leading-[150%] font-Rubik after:absolute after:w-full after:h-[1px] after:bg-[#EDEDED] after:left-0 after:bottom-[-5px] ">
-                                <option value="volvo"></option>
-                                <option value="saab">Saa b</option>
-                                <option value="fiat">Fi at</option>
-                                <option value="audi">Au di</option>
-                            </select> -->
                             <select
                                 class=" w-full border-b-[1px] bg-transparent border-[#E0E0E0]  outline-none cursor-pointer pb-[8px] ">
-                                <option value="TH/s"
-                                    class="text-[#0D0D2B] text-[20px] font-normal leading-[150%] font-Rubik">TH/s
+                                <option value="TH/s" class="font-Rubik">TH/s
                                 </option>
-                                <option value="TH/s">TH/s</option>
-                                <option value="TH/s">TH/s</option>
-                                <option value="TH/s">TH/s</option>
-                                <option value="TH/s">TH/s</option>
-                                <option value="TH/s">TH/s</option>
+                                <option value="TH/s" class="font-Rubik">TH/s</option>
+                                <option value="TH/s" class="font-Rubik">TH/s</option>
+                                <option value="TH/s" class="font-Rubik">TH/s</option>
+                                <option value="TH/s" class="font-Rubik">TH/s</option>
+                                <option value="TH/s" class="font-Rubik">TH/s</option>
                             </select>
                         </div>
                     </div>
@@ -571,8 +564,8 @@
                     <div class="row">
                         <div class="md:w-[50%] w-full px-[12px]">
                             <div class="flex items-center gap-2 cursor-pointer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
-                                    fill="none">
+                                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                    viewBox="0 0 40 40" fill="none">
                                     <path
                                         d="M20 39.9999C31.0457 39.9999 40 31.0456 40 19.9999C40 8.95423 31.0457 -7.62939e-05 20 -7.62939e-05C8.9543 -7.62939e-05 0 8.95423 0 19.9999C0 31.0456 8.9543 39.9999 20 39.9999Z"
                                         fill="white" fill-opacity="0.1" />
@@ -591,7 +584,9 @@
                                     <path d="M26.9985 23.2481L31.9969 20.2936L26.9985 18.0216V23.2481Z" fill="white" />
                                     <path d="M22 20.2936L26.9984 23.2481V18.0216L22 20.2936Z" fill="white" />
                                 </svg>
-                                <p class=" text-white text-[18px] font-semibold leading-normal font-Inter">CRAPPO</p>
+                                <p
+                                    class="text-white text-[18px] font-semibold leading-normal font-Inter cursor-pointer">
+                                    CRAPPO</p>
                             </div>
                         </div>
                         <div class="md:w-[50%] w-full px-[12px]">

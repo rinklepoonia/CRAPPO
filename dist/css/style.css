@@ -6,3 +6,7 @@
     opacity: 1 !important;
     visibility: visible;
 }
+
+.overflow-hidden {
+    overflow: hidden;
+}
